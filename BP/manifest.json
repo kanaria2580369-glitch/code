@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Adaptive Hunter",
+    "description": "指定コマンドで始まる、学習して進化するハンター",
+    "uuid": "4f3c5374-34d8-44b3-8f7e-3f66f75a5bd1",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "0a7a3f89-85a3-4e77-9af7-a2eaedf15ad3",
+      "version": [1, 0, 0]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "uuid": "f2f5f614-0d5f-47cc-9d2c-c3158bf61ca0",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.12.0-beta"
+    }
+  ]
+}
