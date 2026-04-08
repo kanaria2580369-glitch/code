@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Z2WAV Web Encoder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Z2WAV Web Encoder</h1>
+    <p class="warning">⚠ 再生非推奨 / 大音量注意（特にイヤホン）</p>
+
+    <section class="card">
+      <label for="fileInput">入力ファイル</label>
+      <input id="fileInput" type="file" />
+
+      <label for="partSize">パートサイズ (MB)</label>
+      <input id="partSize" type="number" min="32" step="32" value="512" />
+
+      <p id="envInfo"></p>
+      <button id="convertBtn">Z2WAVに変換</button>
+      <progress id="progress" max="100" value="0"></progress>
+      <pre id="log"></pre>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
